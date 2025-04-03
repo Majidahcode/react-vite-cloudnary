@@ -1,0 +1,281 @@
+main.main{
+  /* margin: 50px; */
+  justify-content: space-between;
+  /* border-radius: 50px; */
+  background: linear-gradient(-100deg,black, rgba(18, 0, 177, 0.342) ,rgb(0, 0, 0), rgb(0, 0, 0));
+}
+a {
+  pointer-events: auto;
+  cursor: pointer;
+}
+main.main .left-section{
+  
+  flex-direction: column;
+  gap: 10px;
+  margin: 70px 40px;
+  background-color: rgba(97, 97, 97, 0.13);
+  border-radius: 10px;
+  padding: 30px;
+  text-align: center;
+  height: 410px;
+}
+main.main .left-section button{
+  width: 170px;
+  background: linear-gradient(100deg, rgb(0, 0, 0), rgba(255, 255, 255, 0.137), black);
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  text-transform: capitalize;
+  opacity: 0.5;
+  border: none;
+}
+
+main.main .left-section button{
+  color: white;
+  transition: 1s;
+}
+
+main.main .left-section button:hover{
+  margin-left: 30px;
+  transition: 0.5s;
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.322);
+
+}
+main.main .left-section button.active{
+  opacity: 1;
+  font-weight: bold;
+  letter-spacing: 0.6px;
+  border: 1px solid rgba(255, 255, 255, 0.521);
+
+
+}
+main.main .right-section{
+  flex-grow: 1;
+  margin: 70px 100px;
+  width: 40px;
+
+
+  /* background-color: rgba(0, 255, 255, 0.144); */
+
+}
+.card{
+  cursor: pointer;
+}
+main.main .right-section .container-card {
+  background-color: rgba(90, 90, 90, 0.171);
+  padding: 20px;
+  text-align: center;
+  border-radius: 4px;
+  backdrop-filter: blur(20px);
+  margin-bottom: 30px;
+  transition: 1s;
+}
+main.main .right-section .container-card:hover {
+  rotate: 3deg;
+  transition: 0.5s;
+}
+main.main .right-section .container-card .card h1{
+  margin-top: 10px;
+  font-size: 25px;
+  text-transform:capitalize ;
+  background: linear-gradient(50deg, #ffffff, #0026ff );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+}
+main.main .right-section .container-card .card p{
+  margin-top: 10px;
+  font-size: 15px;
+  color: #ffffff7e;
+  line-height: 1.5;
+  text-transform: lowercase;
+
+  
+}
+main.main .right-section .container-card .card .footer-card{
+  display: flex;
+  justify-content: space-between;
+margin-top: 10px;
+cursor: pointer;
+  
+}
+main.main .right-section .container-card .card img{
+  
+  width: fit-content;
+  height: 250px;
+  border-radius: 6px;
+  margin: 0 auto;
+
+
+  /* background-color: rgba(0, 255, 255, 0.144); */
+
+}
+
+
+
+/* MIDEA QWIRY */
+@media (max-width: 1107px){
+
+  main.main .right-section .container-card .card img{
+  
+    width: 280px;
+    height: 220px;
+    border-radius: 6px;
+    margin: 0 auto;
+  
+  
+    /* background-color: rgba(0, 255, 255, 0.144); */
+  
+  }
+}
+@media (max-width: 1045px){
+
+  main.main .right-section .container-card .card img{
+  
+    width: 260px;
+    height: 160px;
+    border-radius: 6px;
+    margin: 0 auto;
+  
+  
+    /* background-color: rgba(0, 255, 255, 0.144); */
+  
+  }
+}
+@media (max-width: 1020px){
+
+  main.main .right-section .container-card .card img{
+  
+    width: 250px;
+    height: 160px;
+    border-radius: 6px;
+    margin: 0 auto;
+  
+  
+    /* background-color: rgba(0, 255, 255, 0.144); */
+  
+  }
+}
+@media (max-width: 1010px){
+
+  
+
+    main.main .left-section {
+      flex-wrap: wrap !important;
+      padding: 10px !important;
+      height: 60px !important;
+      flex-direction: row;
+      background-color:transparent;
+    
+    }
+    main.main .left-section button {
+      width: 127px !important;
+      padding: 9px !important;
+      margin: 7px auto !important;
+      text-align: center !important;
+      
+    
+    }
+    main.main{
+      display: block !important;
+    }
+    main.main .right-section {
+    
+      margin: 100px 70px 0 170px !important;
+      width: 60% !important;
+      
+    }
+    main.main .right-section .container-card {
+      padding: 12px !important;
+    
+    }
+main.main .right-section .container-card .card img{
+  width: 350px;
+  height: 200px;
+}
+}
+@media (max-width: 880px){
+
+main.main .left-section {
+  flex-wrap: wrap !important;
+  padding: 10px !important;
+  height: 60px !important;
+  flex-direction: row;
+  background-color:transparent;
+
+}
+main.main .left-section button {
+  width: 127px !important;
+  padding: 9px !important;
+  margin: 7px auto !important;
+  text-align: center !important;
+  
+
+}
+main.main{
+  display: block !important;
+}
+main.main .right-section {
+
+  margin: 100px 70px 0 100px !important;
+  width: 70% !important;
+  
+}
+main.main .right-section .container-card {
+  padding: 12px !important;
+
+}
+main.main .right-section .container-card .card img{
+  width: 400px;
+  height: 240px;
+}
+}
+@media (max-width: 780px){
+  main.main .right-section {
+
+    margin: 100px 70px 0 60px !important;
+    width: 80% !important;
+    
+  }
+
+  main.main .right-section .container-card .card img{
+    width: 400px;
+    height: 240px;
+  }
+}
+@media (max-width: 680px){
+  main.main .right-section {
+
+    margin: 100px 70px 0 40px !important;
+    width: 85% !important;
+    
+  }
+  main.main .right-section .container-card .card img{
+    width: 390px;
+    height: 240px;
+  }
+} 
+@media (max-width: 641px){
+  main.main .right-section {
+
+    margin: 150px 70px 0 30px !important;
+    width: 85% !important;
+    
+  }
+  main.main .right-section .container-card .card img{
+    width: 300px;
+    height: 200px;
+  }
+}
+@media (max-width: 490px){
+  main.main .right-section {
+
+    margin: 150px 70px 0 20px !important;
+    width: 90% !important;
+    
+  }
+  main.main .right-section .container-card .card img{
+    width: 300px;
+    height: 200px;
+  }
+}

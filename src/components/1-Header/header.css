@@ -1,0 +1,404 @@
+/* START HEADER SECTION */
+header.flex{
+  justify-content: space-between;
+  text-align: center;
+  padding: 20px;
+  background: linear-gradient(50deg, black, rgba(216, 192, 192, 0), rgba(211, 156, 6, 0.144));
+
+}
+
+/* LOGO NAME ************************/
+header h1{
+  background: linear-gradient(1deg, #ffffff, #ff8800 );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 20px;
+}
+
+
+header ul.flex{
+  gap: 16px ;
+
+}
+header ul.flex li a{
+  color: rgba(255, 255, 255, 0.377);
+  float: right;
+  transition: 3s;
+}
+header ul.flex li a:hover{
+  color: rgb(255, 115, 0);
+  transition: 0.5s;
+  font-weight: 600;
+  padding: 20px;
+}
+/* BUTTONS LIGHT + MENU *********************** */
+header .light,.menu, .represntBtn, .onModalTo {
+  padding: 10px;
+  border-radius: 50px;
+  border: none;
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.815);
+  background: linear-gradient(80deg, rgb(150, 102, 14),black);
+  cursor: pointer;
+  transition: 1s;
+
+}
+header .light{
+  filter: blur(2px);
+  opacity: 0.5;
+
+
+}
+header .light:hover{
+  padding: 12px;
+  border-radius: 50px;
+  border: none;
+  font-weight: 600;
+  background: linear-gradient(-80deg, rgb(150, 102, 14),black);
+  cursor: pointer;
+  transition: 0.3s;
+  filter: blur(0);
+  opacity: 1;
+
+}
+header .menu{
+  display: none;
+}
+
+/* MODAL*********************** */
+header .fixed{
+  position: fixed;
+  inset: 0;
+  z-index: 4;
+  background-color: #0000003a;
+  direction: rtl;
+  backdrop-filter: blur(5px);
+  
+}
+header .fixed ul{
+  width: 50%;
+  height: 50%;
+  margin: 100px auto 0 auto;
+
+}
+header .fixed ul, .modalTo{
+  background-color: transparent;
+  border-radius: 20px;
+  box-shadow:0 0 20px rgba(223, 121, 4, 0.445);
+}
+header .fixed .modal, .modalTo{
+  backdrop-filter: blur(0px);
+  animation: showModal  1s ;
+
+}
+header .fixed{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin: 0 30px;
+}
+header .fixed .modalTo{
+  width: fit-content;
+
+  height: 500px;
+  margin: 30px 20px 0px 10px;
+  padding: 5px;
+  /* color: #000000; */
+  line-height: 2.6;
+  /* filter: blur(2px); */
+  cursor: pointer;
+  text-decoration: rtl;
+  font-size: 16px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  transition: 0.4s;
+  
+
+}
+
+header .fixed .modal .closeBtn{
+  position: relative;
+  background-color: #000000;
+  border: none;
+  padding: 5px;  
+  font-size: 20px;
+  border-radius: 6px;
+  color: #ffffff;
+  margin-top: 20px;
+  right: -300px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.onModalTo{
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+  bottom:20px;
+  left: 20px;
+  transition: 0.3s !important;
+
+}
+.onModalTo:hover{
+  background-color: #fdfcfb ;
+
+  width: 60px;
+  height: 60px;
+  transition: 0.3s !important;
+
+}
+.closeBtnModalTo{
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50px;
+  background-color: #a57327;
+  
+  border: none;
+  transition: 0.3;
+  cursor: pointer;
+}
+.closeBtnModalTo:hover{
+
+
+  width: 30px;
+  height: 30px;
+  border-radius: 40px;
+  background-color: #d4840d;
+  transition: 0.4;
+  color: white;
+
+}
+header .fixed .modal .closeBtn:hover{
+  background-color: #ff8800;
+  border-radius: 50px;
+  font-size: 15px;
+  padding: 7px 10px 7px 10px;  
+  transition: 0.5s;
+  rotate: 180deg;
+
+
+
+}
+header .fixed ul li {
+  position: relative;
+  text-align: center;
+  padding: 12px;
+
+  /* margin-top: 10px; */
+  right: 240px;
+}
+header .fixed ul li a{
+  color: #ffffffbd;
+  transition: 1s;
+
+
+}
+
+header .fixed ul li a:hover{
+  color: rgb(255, 115, 0);
+  transition: 0.5s;
+  font-size: 40px;
+  text-shadow: 0 0 10px #ff880050;
+  
+}
+
+header .fixed .image img{
+  position: relative;
+  left: 150px;
+  top: 250px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  z-index: 1;
+
+}
+header .fixed .image img.i1{
+  margin-bottom: -70px;
+}
+
+/* END HEADER SECTION */
+
+/* START HERO SECTION */
+
+
+
+
+
+
+
+/* END HERO SECTION */
+
+
+@keyframes showModal{
+  0%{
+    scale: 0;
+
+  }
+  60%{
+    scale: 1.2;
+  
+  }
+  100%{
+    scale: 1;
+  }
+}
+
+/* MIDEA QWIRY */
+
+@media (max-width: 1285px) {
+  section.hero .right-section img {
+    width: 580px !important;
+    height: 490px !important;
+    margin-top: 5px;
+    margin-left: -500px;
+    opacity: 0.2 !important;
+  }
+
+}
+
+@media (max-width: 960px){
+  section.hero .right-section img {
+    width: 580px !important;
+    height: 490px !important;
+    margin-top: 5px;
+    margin-left: -500px;
+    opacity: 0.3 !important;
+  }
+}
+@media (max-width: 880px){
+  section.hero .right-section img {
+    width: 517px !important;
+    height: 480px !important;
+    margin-top: -70px !important;
+  }
+  header ul.flex li a {
+    font-size: 13px;
+  }
+  section.hero .left-section .lang span {
+    font-size: 10px;
+}
+main.main .left-section {
+  flex-wrap: wrap;
+  padding: 10px;
+  height: 60px;
+}
+
+}
+
+@media (max-width: 800px){
+  section.hero .right-section img {
+    width: 560px !important;
+    height: 340px !important;
+    margin-top: 95px;
+  }
+  main.main .right-section .container-card:first-child {
+    margin-top: 200px ;
+}
+}
+
+@media (max-width: 730px){
+  section.hero .right-section img {
+    width: 390px !important;
+    height: 300px !important;
+    margin-left: -453px;
+    margin-top: -65px;
+  }
+  section.hero .left-section p{
+    font-size: 15px;
+    /* width: 300px; */
+    /* margin-left: -15px; */
+  }
+  main.main .right-section .container-card:first-child {
+    margin-top: 200px ;
+}
+}
+
+@media (max-width: 700px){
+  header.flex nav{
+    display: none;
+  }
+  header .menu{
+    display: block;
+  }
+  main.main .right-section .container-card:first-child {
+    margin-top: 200px ;
+}
+}
+
+@media (max-width: 680px){
+  section.hero .right-section img {
+    width: 470px !important;
+    height: 340px !important;
+    margin-left: -490px;
+    margin-top: -100px;
+    opacity: 0.1;
+  }
+   main.main .right-section .container-card:first-child {
+    margin-top: 200px ;
+}
+}
+@media (max-width: 500px){
+  header .light,.menu, .represntBtn{
+    padding: 8px;
+    border-radius: 50px;
+    margin-right: -15px;
+    font-size: 10px;
+
+  
+  }
+  header .light{
+    display: none;
+  }
+  header .menu{
+    margin-left: 55px;  }
+  section.hero .right-section img {
+    width: 350px !important;
+    height: 340px !important;
+    margin-left: -350px;
+    margin-top: -50px !important;
+    opacity: 0.2 !important;
+  }
+  main.main .right-section .container-card:first-child {
+    margin-top: 200px ;
+}
+
+  
+}
+
+@media (max-width: 480px){
+  header .light,.menu, .represntBtn{
+    padding: 8px;
+    margin-right: -15px;
+    font-size: 10px;
+
+  
+  }
+  header .light{
+    display: none;
+  }
+  header .menu{
+    margin-left: 40px;  
+  }
+  section.hero .right-section img {
+    width: 320px !important;
+    height: 300px !important;
+    margin-left: -380px;
+    margin-top: 0px;
+    opacity: 0.3;
+  }
+  main.main .right-section .container-card:first-child {
+    margin-top: 400px ;
+}
+
+
+  
+
+  
+  
+  
+}
+

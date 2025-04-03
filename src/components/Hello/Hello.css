@@ -1,0 +1,154 @@
+body {
+    margin: 0;
+   
+  }
+  
+  .App {
+    text-align: center;
+  }
+  
+  /* تنسيقات صفحة البداية */
+  .splash-screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+    margin-top: 50px;
+    background: #000; /* اللون الأسود */
+    color: #fff; /* اللون الأبيض */
+    flex-direction: column;
+  }
+  .war{
+    color: rgb(255, 162, 0);
+    font-size: 100px;
+    /* margin-bottom: 0; */
+    /* background: wheat; */
+  }
+  .splash-screen h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* .splash-screen p {
+    font-size: 1.2rem;
+  }
+   */
+  /* تنسيقات الصفحة الرئيسية */
+  /* .main-content {
+    padding: 2rem;
+  } */
+/*   
+  .main-content h1 {
+    font-size: 2rem;
+    color: #333;
+  }
+   */
+p{
+    color: wheat;
+   font-weight: 900;
+   font-size: 20px;
+   width: 100%;
+
+}
+
+.splash-screen p span.one{
+    font-size: 50px;
+    color: #4936f6;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.splash-screen p span.one2{
+    font-size: 70px;
+    color: #f63636;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.splash-screen p span.one3{
+    font-size: 70px;
+    color: #ec8852;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.splash-screen p span.one4{
+    font-size: 70px;
+    color: #526cec;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.splash-screen p span.one5{
+    font-size: 30px;
+    color: #ffa42d;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.splash-screen p span.one6{
+    font-size: 100px;
+    color: #700606;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.splash-screen p span.one7{
+    font-size: 50px;
+    color: #ff0000;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.splash-screen p span.one8{
+    font-size: 30px;
+    color: #ff9500;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.splash-screen p span.one9{
+    font-size: 30px;
+    color: #188297;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.splash-screen p span.one10{
+    font-size: 80px;
+    color: #f3ad4b;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.splash-screen p span.one11{
+    font-size: 80px;
+    color: #f3804b;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.splash-screen p span.one12{
+    font-size: 80px;
+    color: #f3804b;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.splash-screen p span.one13{
+    font-size: 80px;
+    color: #f3804b;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.splash-screen p span.one14{
+    font-size: 80px;
+    color: #ffb700;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.splash-screen p span.one15{
+    font-size: 40px;
+    color: #c84013;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.splash-screen p span.one16{
+    font-size: 40px;
+    color: #f79e67;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+button.hello{
+    padding: 10px;
+    color: #ffffff;
+    font-size: 20px;
+    background: #ffffff21;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 50px;
+
+    cursor: pointer;
+
+
+}

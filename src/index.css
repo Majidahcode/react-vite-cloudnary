@@ -1,0 +1,74 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&family=Marhey:wght@300..700&family=Oi&family=Rakkas&family=Reem+Kufi:wght@400..700&family=Ruwudu:wght@400;500;600;700&family=Scheherazade+New:wght@400;500;600;700&family=Sixtyfour&family=Vibes&family=Zain:ital,wght@0,200;0,300;0,400;0,700;0,800;0,900;1,300;1,400&display=swap');
+
+html{
+  font-family: "Zain" ;
+  box-sizing: border-box;
+  letter-spacing: 1px;
+  scroll-behavior: smooth;
+}
+*, *::before, *::after{
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+:root{ 
+  --primary: black; 
+}
+/* 
+.light{
+  --primary: #ffff;
+} */
+
+body{
+  background-color: var(--primary);
+  color: aliceblue;
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+
+  padding: 0;
+  text-align: center;
+  overflow-x: hidden;
+}
+li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  color: initial;
+}
+.flex{
+  display: flex;
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+  max-width: 1200px; /* تحديد عرض أقصى */
+}
+
+
+
+.divider{
+  border-bottom: 2px solid rgb(255, 136, 0);
+}
+
+.scrollToUp{
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  border: none;
+  background-color: rgb(173, 116, 2);
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+
+  
+
+
+}
+

@@ -791,43 +791,43 @@ export default function FromNothingToThing() {
           <a className="show-1 homebutton" href="#">
             <i className="fa fa-home" />
             
-            Homepage
+            المتطلبات
           </a>
         </li>
         <li>
           <a className="show-2" href="#">
             <i className="fa fa-group" />
-            About Us
+             تحليل
           </a>
         </li>
         <li>
           <a className="show-3" href="#">
             <i className="fa fa-briefcase" />
-            Our Gallery
+            تصميم اولي 
           </a>
         </li>
         <li>
           <a className="show-4" href="#">
             <i className="fa fa-cogs" />
-            Services
+            مراجعه التصميم
           </a>
         </li>
         <li>
           <a className="show-5" href="#">
             <i className="fa fa-globe" />
-            Contact Us
+            التسعير 
           </a>
         </li>
         <li>
           <a className="show-6" href="#">
             <i className="fa fa-globe" />
-            Codeing
+            بدءالتصميم
           </a>
         </li>
         <li>
           <a className="show-7" href="#">
             <i className="fa fa-globe" />
-            Final
+            تسليم موقعك
           </a>
         </li>
       </ul>{" "}
@@ -851,7 +851,7 @@ export default function FromNothingToThing() {
                   data-original-title="جمع المتطلبات"
                 >
                   {/* <i className="fa fa-home" /> */}
-                  <img className='icon-from-thing' src="/public/images-2/icons/statistic.webp" alt="" />
+                  <img className='icon-from-thing' src="https://res.cloudinary.com/dadtybpaw/image/upload/v1745431674/images-2/icons/statistic.webp" alt="" />
                 </a>
               </li>
               <li>
@@ -862,7 +862,7 @@ export default function FromNothingToThing() {
                   data-original-title="تحليل"
                 >
                   {/* <i className="fa fa-user" /> */}
-                  <img className='icon-from-thing' src="/public/images-2/icons/1062.webp" alt="" />
+                  <img className='icon-from-thing' src="https://res.cloudinary.com/dadtybpaw/image/upload/v1745431632/images-2/icons/1062.webp" alt="" />
                 </a>
               </li>
               <li>
@@ -873,7 +873,7 @@ export default function FromNothingToThing() {
                   data-original-title="تصميم اولي"
                 >
                   {/* <i className="fa fa-briefcase" /> */}
-                  <img className='icon-from-thing' src="/public/images-2/icons/analysis_1.webp" alt="" />
+                  <img className='icon-from-thing' src="https://res.cloudinary.com/dadtybpaw/image/upload/v1745431641/images-2/icons/analysis_1.webp" alt="" />
                 </a>
               </li>
               <li>
@@ -884,7 +884,7 @@ export default function FromNothingToThing() {
                   data-original-title="مراجعه التصميم"
                 >
                   {/* <i className="fa fa-cog" /> */}
-                  <img className='icon-from-thing' src="/public/images-2/icons/4.webp" alt="" />
+                  <img className='icon-from-thing' src="https://res.cloudinary.com/dadtybpaw/image/upload/v1745431638/images-2/icons/4.webp" alt="" />
                 </a>
               </li>
               <li>
@@ -895,7 +895,7 @@ export default function FromNothingToThing() {
                   data-original-title="التسعير "
                 >
                   {/* <i className="fa fa-globe" /> */}
-                  <img className='icon-from-thing' src="/public/images-2/icons/Money_analysis (1).webp" alt="" />
+                  <img className='icon-from-thing' src="https://res.cloudinary.com/dadtybpaw/image/upload/v1745431671/images-2/icons/Money_analysis%20%281%29.webp" alt="" />
                 </a>
               </li>
               <li>
@@ -906,7 +906,7 @@ export default function FromNothingToThing() {
                   data-original-title="بدء التصميم"
                 >
                   {/* <i className="fa fa-globe" /> */}
-                  <img className='icon-from-thing' src="/public/images-2/icons/analysis_8.webp" alt="" />
+                  <img className='icon-from-thing' src="https://res.cloudinary.com/dadtybpaw/image/upload/v1745431643/images-2/icons/analysis_8.webp" alt="" />
 
                 </a>
               </li>
@@ -918,7 +918,7 @@ export default function FromNothingToThing() {
                   data-original-title="التسليم"
                 >
                   {/* <i className="fa fa-globe" /> */}
-                  <img className='icon-from-thing' src="/public/images-2/icons/11836242.png" alt="" />
+                  <img className='icon-from-thing' src="https://res.cloudinary.com/dadtybpaw/image/upload/v1745431636/images-2/icons/11836242.png" alt="" />
 
                 </a>
               </li>
@@ -955,11 +955,11 @@ export default function FromNothingToThing() {
                 <div className=" click col-md-4 col-sm-6 col-xs-6">
                   <div className="portfolio-item">
                     <div className="overlay">
-                      <a href="/public/images-2/what.png" data-rel="lightbox">
+                      <a href="https://res.cloudinary.com/dadtybpaw/image/upload/v1745424524/my_project/hzqxfh0lbiesxhqhh7dq.png" data-rel="lightbox">
                         <i className="fa fa-expand" />
                       </a>
                     </div>
-                    <img src="/public/images-2/what.png" alt="Image 2" />
+                    <img src="https://res.cloudinary.com/dadtybpaw/image/upload/v1745424524/my_project/hzqxfh0lbiesxhqhh7dq.png" alt="Image 2" />
                   </div>{" "}
                   {/* /.portfolio-item */}
                 </div>{" "}
@@ -967,7 +967,7 @@ export default function FromNothingToThing() {
                 <div className="click col-md-4 col-sm-6 col-xs-6">
                   <div className="portfolio-item">
                     <div className="overlay">
-                      <a href="/public/images-2/gallery/bgColor.png" data-rel="lightbox">
+                      <a href="https://res.cloudinary.com/dadtybpaw/image/upload/v1745431601/images-2/gallery/bgColor.png" data-rel="lightbox">
                         <i className="fa fa-expand" />
                       </a>
                     </div>
@@ -979,11 +979,11 @@ export default function FromNothingToThing() {
                 <div className="click col-md-4 col-sm-6 col-xs-6">
                   <div className="portfolio-item">
                     <div className="overlay">
-                      <a href="/public/images-2/gallery/main.png" data-rel="lightbox">
+                      <a href="https://res.cloudinary.com/dadtybpaw/image/upload/v1745431607/images-2/gallery/main.png" data-rel="lightbox">
                         <i className="fa fa-expand" />
                       </a>
                     </div>
-                    <img src="/public/images-2/gallery/main.png" alt="Image 4" />
+                    <img src="https://res.cloudinary.com/dadtybpaw/image/upload/v1745431607/images-2/gallery/main.png" alt="Image 4" />
                   </div>{" "}
                   {/* /.portfolio-item */}
                 </div>{" "}
@@ -991,7 +991,7 @@ export default function FromNothingToThing() {
                 <div className="click col-md-4 col-sm-6 col-xs-6">
                   <div className="portfolio-item">
                     <div className="overlay">
-                      <a href="/public/images-2/gallery/onePage.jpeg" data-rel="lightbox">
+                      <a href="https://res.cloudinary.com/dadtybpaw/image/upload/v1745431610/images-2/gallery/onePage.jpg" data-rel="lightbox">
                         <i className="fa fa-expand" />
                       </a>
                     </div>
@@ -1003,11 +1003,11 @@ export default function FromNothingToThing() {
                 <div className="click col-md-4 col-sm-6 col-xs-6">
                   <div className="portfolio-item">
                     <div className="overlay">
-                      <a href="/public/images-2/gallery/lang.png" data-rel="lightbox">
+                      <a href="https://res.cloudinary.com/dadtybpaw/image/upload/v1745431606/images-2/gallery/lang.png" data-rel="lightbox">
                         <i className="fa fa-expand" />
                       </a>
                     </div>
-                    <img src="/public/images-2/gallery/lang.png" alt="Image 6" />
+                    <img src="https://res.cloudinary.com/dadtybpaw/image/upload/v1745431606/images-2/gallery/lang.png" alt="Image 6" />
                   </div>{" "}
                   {/* /.portfolio-item */}
                 </div>{" "}
@@ -1016,7 +1016,7 @@ export default function FromNothingToThing() {
                   <div className="portfolio-item">
                     <div className="overlay">
                       <a
-                        href="/public/images-2/gallery/finalImg.jpeg"
+                        href="https://res.cloudinary.com/dadtybpaw/image/upload/v1745431603/images-2/gallery/finalImg.jpg"
                         data-rel="lightbox"
                       >
                         <i className="fa fa-expand" />
@@ -1030,11 +1030,11 @@ export default function FromNothingToThing() {
                 <div className="click col-md-4 col-sm-6 col-xs-6">
                   <div className="portfolio-item">
                     <div className="overlay">
-                      <a href="/public/images-2/gallery/aboutme.png" data-rel="lightbox">
+                      <a href="https://res.cloudinary.com/dadtybpaw/image/upload/v1745431600/images-2/gallery/aboutme.png" data-rel="lightbox">
                         <i className="fa fa-expand" />
                       </a>
                     </div>
-                    <img src="/public/images-2/gallery/aboutme.png" alt="Image 8" />
+                    <img src="https://res.cloudinary.com/dadtybpaw/image/upload/v1745431600/images-2/gallery/aboutme.png" alt="Image 8" />
                   </div>{" "}
                   {/* /.portfolio-item */}
                 </div>{" "}
@@ -1042,7 +1042,7 @@ export default function FromNothingToThing() {
                 <div className="click col-md-4 col-sm-6 col-xs-6">
                   <div className="portfolio-item">
                     <div className="overlay">
-                      <a href="/public/images-2/gallery/img-3.png" data-rel="lightbox">
+                      <a href="https://res.cloudinary.com/dadtybpaw/image/upload/v1745431605/images-2/gallery/img-3.png" data-rel="lightbox">
                         <i className="fa fa-expand" />
                       </a>
                     </div>
@@ -1208,8 +1208,8 @@ export default function FromNothingToThing() {
                 {/* /.row */}
                 <div className="row">
                   <div className="images-2 ">
-                    <img src="./images-2/laptop.png" alt="" />
-                    <img src="./images-2/iphone.png" alt="" />
+                    <img src="https://res.cloudinary.com/dadtybpaw/image/upload/v1745424491/my_project/r3p2y9lnmypemjablhb3.png" alt="" />
+                    <img src="https://res.cloudinary.com/dadtybpaw/image/upload/v1745424486/my_project/wcxnylb08win0d2xl897.png" alt="" />
                   </div>{" "}
                   {/* /.col-md-4 */}
                 </div>{" "}
@@ -1402,8 +1402,8 @@ export default function FromNothingToThing() {
                 {/* /.row */}
                 <div className="row">
                   <div className="images-2 ">
-                    <img src="./images-2/laptop.png" alt="" />
-                    <img src="./images-2/iphone.png" alt="" />
+                    <img src="https://res.cloudinary.com/dadtybpaw/image/upload/v1745424491/my_project/r3p2y9lnmypemjablhb3.png" alt="" />
+                    <img src="https://res.cloudinary.com/dadtybpaw/image/upload/v1745424486/my_project/wcxnylb08win0d2xl897.png" alt="" />
                   </div>{" "}
                   {/* /.col-md-4 */}
                 </div>{" "}
@@ -1439,8 +1439,8 @@ export default function FromNothingToThing() {
                 {/* /.row */}
                 <div className="row">
                   <div className="images-final ">
-                    <img src="./images-2/gallery/website-laptop.png" alt="" />
-                    <img src="./images-2/gallery/website-phone.png" alt="" />
+                    <img src="https://res.cloudinary.com/dadtybpaw/image/upload/v1745431628/images-2/gallery/website-laptop.png" alt="" />
+                    <img src="https://res.cloudinary.com/dadtybpaw/image/upload/v1745431630/images-2/gallery/website-pho" alt="" />
                   </div>{" "}
                   {/* /.col-md-4 */}
                 </div>{" "}

@@ -76,10 +76,14 @@ h6 {
   border-bottom: 3px solid #eddddf1c;}
 
 .page-title {
+  font-weight: bolder;
   font-size: 60px;
   /* text-transform: uppercase; */
   margin: 0;
-  color: #ffffffc2;
+  /* color: ; */
+  background: linear-gradient(180deg, #ffffff, hsla(0, 0%, 100%, 0.626));
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
 
 }
 
@@ -96,7 +100,7 @@ h6 {
   position: fixed;
   top: 0;
   left: 0;
-  background-image: url(/public/images-2/bg2.jpg);
+  background-image: url(https://res.cloudinary.com/dadtybpaw/image/upload/v1745424479/my_project/zkfpweytelc8hhl5aegx.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -168,7 +172,7 @@ font-size: 25px;
   padding: 10px;
   border-radius: 20px;
   
-  width: 380px;
+  /* width: 380px; */
 
 }
 .widget-title::before{
@@ -568,7 +572,7 @@ font-size: 30px;
 }
 
 .services .header .service-header h4 {
-  float: right;
+  /* float: right; */
   line-height: 60px;
   margin: 0;
   padding: 0 15px;
@@ -696,8 +700,10 @@ margin: 40px auto;
 .templatemo_logo a{
   color: white;
 
-  background: linear-gradient(180deg, rgb(255, 255, 255), rgba(124, 121, 121, 0.833),white);
+  font-weight: lighter;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.264), #ffffffa5);
   -webkit-text-fill-color: transparent;
+  /* text-shadow: 0px 20px 15px white; */
   -webkit-background-clip: text;
   font-weight: bolder;
   
@@ -781,7 +787,9 @@ margin: 40px auto;
 }
 
 .responsive_menu {
-  display: none;
+  /* display: none; */
+  transition: all 8.3s; /* لإضافة حركة سلسة */
+
   position: relative;
   width: 100%;
 }
@@ -1018,7 +1026,7 @@ IPHONE 4-4S-5 PORTRAIT (320x568)
     font-size: 18px;
     padding: 10px;
     border-radius: 20px; */
-    width: 280px;
+    width: 220px;
     text-align: center;
 }
 .templatemo_logo {

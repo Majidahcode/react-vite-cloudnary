@@ -16,6 +16,8 @@ import Content from "./Pages/Content";
 import HelloPage from "./components/PopUpPages/HelloPages/HelloPage";
 import Hello from "./components/Hello/Hello";
 // import MainPage from "./Pages/mainPage";
+import FileUploader from './components/FileUploader';
+
 
 
 
@@ -57,6 +59,9 @@ function App() {
         >
           <button className="scrollToUp">↥</button>
         </a>
+        <FileUploader />
+        
+
       </div>
     </Router>
   );

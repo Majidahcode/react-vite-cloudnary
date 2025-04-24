@@ -25,7 +25,7 @@ export default function Hero() {
         </ul>
         <span className='goDown'>⇣</span>
         </div>
-      <div className="right-section"><img src="/images/landing-image.png" alt="" /></div>
+      <div className="right-section"><img src="https://res.cloudinary.com/dadtybpaw/image/upload/v1745424424/my_project/bq2o4c93c2yvq6ltivbi.png" alt="" /></div>
     </section>
   )
 }

@@ -52,7 +52,7 @@ function WebiteVScv() {
                             <div
                                 className="col-md-12 col-lg-6 tm-section-image-container tm-img-left-container"
                             >
-                                <video src="/public/video-project/largPaper.mp4" loop autoPlay></video>
+                                <video src="https://res.cloudinary.com/dadtybpaw/video/upload/v1745424732/my_project/b6uekfjo3v5dyzfet6nr.mp4" loop autoPlay></video>
                                 {/* <img src="/images/largPaper.jpg" alt="Image" className="img-fluid" /> */}
                             </div>
                             <div className="col-md-12 col-lg-6">
@@ -96,13 +96,13 @@ function WebiteVScv() {
                                 className=" images-SM col-md-12 col-lg-6 tm-section-image-container tm-img-right-container"
                             >
                                 <img
-                                    src="/images/movie.jpg"
+                                    src="https://res.cloudinary.com/dadtybpaw/image/upload/v1745424437/my_project/zrpvsghuauoonfypmpie.jpg"
                                     alt="Image"
                                     className=" img-SM tm-img-right"
                                 />
                                 
                                  <img
-                                    src="/images/story.jpg"
+                                    src="https://res.cloudinary.com/dadtybpaw/image/upload/v1745424447/my_project/ukadbg5xv19fmzrfxbce.jpg"
                                     alt="Image"
                                     className="img-SM tm-img-right"
                                 />
@@ -124,7 +124,7 @@ function WebiteVScv() {
                                 <div className="grid">
                                     <figure className="effect-duke mb-3">
                                         <img
-                                            src="/images/movie.jpg"
+                                            src="https://res.cloudinary.com/dadtybpaw/image/upload/v1745424437/my_project/zrpvsghuauoonfypmpie.jpg"
                                             alt="Image"
                                             className="img-fluid"
                                         />
@@ -143,8 +143,8 @@ function WebiteVScv() {
                                     </p>
                                 </div>
                                 <div>
-                                    <img className='img-1' src="/public/images/darkLight.png" alt="" />
-                                    <img className='img-2' src="/public/images/cv.jpeg" alt="" />
+                                    <img className='img-1' src="https://res.cloudinary.com/dadtybpaw/image/upload/v1745424408/my_project/kfs4igiopntmjj9yfpze.png" alt="" />
+                                    <img className='img-2' src="https://res.cloudinary.com/dadtybpaw/image/upload/v1745424404/my_project/tgjlscyq3tcjpcjolokm.jpg" alt="" />
                                 </div>
                             </div>
                         </div>
@@ -197,7 +197,7 @@ function WebiteVScv() {
                                     </a>
                                 </div>
                                 <h3>اجل نحسمها <br />الفااااائز معنا في هذه الماسبقه <span>الشرسه</span> العنيفه النزال الذي دخل التاريخ <br /><span>الموقع الالكتروني</span></h3>
-                                <img src="/public/images/winner.png" alt="" />
+                                <img src="https://res.cloudinary.com/dadtybpaw/image/upload/v1745424457/my_project/rbdfgtyayofaypzidevp.png" alt="" />
                             </div>
                           
                         </div>

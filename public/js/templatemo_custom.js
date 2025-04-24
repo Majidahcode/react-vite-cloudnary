@@ -72,7 +72,7 @@ jQuery(document).ready(function($){
   $(".main_menu .show-1").click(function(){
     $(".bg-image").fadeOut('slow', function(){
       $(this).css({
-        'background-image': 'url(images/pg3.jpg)'
+        'background-image': 'url(public/images/gp3.jpg)'
       }).fadeIn('slow');
     });
     return false;
@@ -81,7 +81,7 @@ jQuery(document).ready(function($){
   $(".main_menu .show-2").click(function(){
     $(".bg-image").fadeOut('slow', function(){
       $(this).css({
-        'background-image': 'url(public/images-2/bg8.jpg)'
+        'background-image': 'url(https://res.cloudinary.com/dadtybpaw/image/upload/v1745424484/my_project/qq3raqcen0myc1tdcs05.jpg)'
       }).fadeIn('slow');
     });
     return false;
@@ -90,7 +90,7 @@ jQuery(document).ready(function($){
   $(".main_menu .show-3").click(function(){
     $(".bg-image").fadeOut('slow', function(){
       $(this).css({
-        'background-image': 'url(public/images-2/bg7.jpg)'
+        'background-image': 'url(https://res.cloudinary.com/dadtybpaw/image/upload/v1745424483/my_project/k41jc2esxkveobkxk7vn.jpg)'
       }).fadeIn('slow');
     });
     return false;
@@ -99,7 +99,7 @@ jQuery(document).ready(function($){
   $(".main_menu .show-4").click(function(){
     $(".bg-image").fadeOut('slow', function(){
       $(this).css({
-        'background-image': 'url(public/images-2/bg12.jpg)'
+        'background-image': 'url(https://res.cloudinary.com/dadtybpaw/image/upload/v1745424473/my_project/luxz4as1cwfgeuummxx9.jpg)'
       }).fadeIn('slow');
     });
     return false;
@@ -109,7 +109,7 @@ jQuery(document).ready(function($){
     loadScript();
     $(".bg-image").fadeOut('slow', function(){
       $(this).css({
-        'background-image': 'url(public/images-2/bg13.jpg)'
+        'background-image': 'url(https://res.cloudinary.com/dadtybpaw/image/upload/v1745424474/my_project/yikfirbx7tf653fq17gf.jpg)'
       }).fadeIn('slow');
     });
     return false;
@@ -119,7 +119,7 @@ jQuery(document).ready(function($){
     loadScript();
     $(".bg-image").fadeOut('slow', function(){
       $(this).css({
-        'background-image': 'url(public/images-2/bg11.jpg)'
+        'background-image': 'url(https://res.cloudinary.com/dadtybpaw/image/upload/v1745424472/my_project/pxrlmsdr7gjw5gzp7job.jpg)'
       }).fadeIn('slow');
     });
     return false;
@@ -129,7 +129,7 @@ jQuery(document).ready(function($){
     loadScript();
     $(".bg-image").fadeOut('slow', function(){
       $(this).css({
-        'background-image': 'url(public/images-2/bg4.jpg)'
+        'background-image': 'url(https://res.cloudinary.com/dadtybpaw/image/upload/v1745424480/my_project/rqjxxxbx0njgsnuhkqcb.jpg)'
       }).fadeIn('slow');
     });
     return false;

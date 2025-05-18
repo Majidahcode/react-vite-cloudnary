@@ -24,8 +24,4 @@ assetsMapping.json
 .vscode/
 .idea
 .DS_Store
-public/video-project/
-
-
-
-public/video-project/ 
+/public/video-project/**/*.mp4

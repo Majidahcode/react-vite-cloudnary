@@ -779,7 +779,7 @@ margin: 40px auto;
 }
 
 .responsive_menu {
-  /* display: none; */
+  display: none;
   position: relative;
   width: 100%;
 }

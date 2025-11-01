@@ -44,7 +44,9 @@ https://templatemo.com/tm-527-sided
   p {
     font-family: "Zain";
     line-height: 1.7;
-    color: rgba(0, 0, 0, 0.844);
+    color: rgba(178, 178, 178, 0.844);
+    /* color: wheat; */
+
   }
   h3{
     font-family: "Zain" !important;
@@ -278,6 +280,7 @@ color: black;
     /* width: 500px; */
   }
   .tm-section-text-container p.desc{
+    font-size: 20px;
     color: #000000cf;
   }
   .tm-section-text-container {
@@ -1054,6 +1057,7 @@ color: black;
       padding-right: 15px;
       margin-left: 0;
       margin-right: auto;
+      top: 0px;
     }
   
     .tm-section-text-container-6 {

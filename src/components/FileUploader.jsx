@@ -17,7 +17,7 @@ const FileUploader = () => {
 
   return (
     <div>
-      <input type="file" onChange={handleFileChange} />
+      {/* <input type="file" onChange={handleFileChange} /> */}
       {fileUrl && (
         <div>
           {fileUrl.includes('image') ? (

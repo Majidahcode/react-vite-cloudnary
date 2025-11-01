@@ -4,7 +4,7 @@ export default function qForProgramming() {
   return (
     
     <div className="container1">
-      <h1>  Comming Soon...  </h1>    
+      <h1>  قريبا ...  </h1>    
     </div>
   )
 }

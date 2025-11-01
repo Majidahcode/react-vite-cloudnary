@@ -3,7 +3,8 @@ header.flex{
   justify-content: space-between;
   text-align: center;
   padding: 20px;
-  background: linear-gradient(50deg, black, rgba(216, 192, 192, 0), rgba(211, 156, 6, 0.144));
+  background: linear-gradient(50deg, black, rgba(216, 192, 192, 0), rgba(211, 156, 6, 0.582));
+  border-radius: 3px;
 
 }
 
@@ -12,7 +13,7 @@ header h1{
   background: linear-gradient(1deg, #ffffff, #ff8800 );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 20px;
+  font-size: 25px;
 }
 
 
@@ -21,8 +22,12 @@ header ul.flex{
 
 }
 header ul.flex li a{
-  color: rgba(255, 255, 255, 0.377);
+  color: rgba(255, 255, 255, 0.659);
   float: right;
+  font-size: 16px;
+  text-decoration: none;
+  margin-top: 20px;
+  list-style: none;
   transition: 3s;
 }
 header ul.flex li a:hover{
@@ -32,7 +37,7 @@ header ul.flex li a:hover{
   padding: 20px;
 }
 /* BUTTONS LIGHT + MENU *********************** */
-header .light,.menu, .represntBtn, .onModalTo {
+header .light,.menu, .represntBtn, .onmodal-menuTo {
   padding: 10px;
   border-radius: 50px;
   border: none;
@@ -61,18 +66,28 @@ header .light:hover{
   opacity: 1;
 
 }
-header .menu{
-  display: none;
+/* أخفيت زرّ menu افتراضياً */
+header .menu {
+ display: none; 
 }
 
-/* MODAL*********************** */
+/* modal-menu*********************** */
 header .fixed{
+
+  /* z-index: 4; */
+  
   position: fixed;
   inset: 0;
-  z-index: 4;
-  background-color: #0000003a;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  align-items: center;
   direction: rtl;
+
+  justify-content: center;
   backdrop-filter: blur(5px);
+
+  z-index: 100;
+
   
 }
 header .fixed ul{
@@ -81,14 +96,14 @@ header .fixed ul{
   margin: 100px auto 0 auto;
 
 }
-header .fixed ul, .modalTo{
+header .fixed ul, .modal-menuTo{
   background-color: transparent;
   border-radius: 20px;
   box-shadow:0 0 20px rgba(223, 121, 4, 0.445);
 }
-header .fixed .modal, .modalTo{
+header .fixed .modal-menu, .modal-menuTo{
   backdrop-filter: blur(0px);
-  animation: showModal  1s ;
+  animation: showmodal-menu  1s ;
 
 }
 header .fixed{
@@ -99,7 +114,7 @@ header .fixed{
 
   margin: 0 30px;
 }
-header .fixed .modalTo{
+header .fixed .modal-menuTo{
   width: fit-content;
 
   height: 500px;
@@ -117,7 +132,7 @@ header .fixed .modalTo{
 
 }
 
-header .fixed .modal .closeBtn{
+header .fixed .modal-menu .closeBtn{
   position: relative;
   background-color: #000000;
   border: none;
@@ -130,7 +145,8 @@ header .fixed .modal .closeBtn{
   transition: 0.5s;
   cursor: pointer;
 }
-.onModalTo{
+
+.onmodal-menuTo{
   position: absolute;
   width: 50px;
   height: 50px;
@@ -140,7 +156,7 @@ header .fixed .modal .closeBtn{
   transition: 0.3s !important;
 
 }
-.onModalTo:hover{
+.onmodal-menuTo:hover{
   background-color: #fdfcfb ;
 
   width: 60px;
@@ -148,7 +164,7 @@ header .fixed .modal .closeBtn{
   transition: 0.3s !important;
 
 }
-.closeBtnModalTo{
+.closeBtn ,.modal-menuTo{
   position: absolute;
   top: 10px;
   right: 20px;
@@ -161,7 +177,7 @@ header .fixed .modal .closeBtn{
   transition: 0.3;
   cursor: pointer;
 }
-.closeBtnModalTo:hover{
+.closeBtn ,.modal-menuTo:hover{
 
 
   width: 30px;
@@ -172,7 +188,7 @@ header .fixed .modal .closeBtn{
   color: white;
 
 }
-header .fixed .modal .closeBtn:hover{
+header .fixed .modal-menu .closeBtn:hover{
   background-color: #ff8800;
   border-radius: 50px;
   font-size: 15px;
@@ -183,16 +199,56 @@ header .fixed .modal .closeBtn:hover{
 
 
 }
+/* ************************* */
+/* داخل popup modal-menu */
+header .fixed .modal-menu {
+  background: #0000001f;
+  padding: 1.5rem;
+  border-radius: 8px;
+  backdrop-filter: blur(10px);
+  /* color: #f0f0f0; */
+  max-width: 90%;
+}
+
+header .fixed .modal-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0 0;
+}
+
+header .fixed .modal-menu ul li {
+  margin-bottom: 0.75rem;
+}
+
+/* الأزرار داخل المودال */
+header .fixed .modal-menu ul li button {
+  width: 100%;
+  text-align: right;        /* أو left حسب اتجاهك */
+  background: transparent;
+  border: none;
+  font-size: 1.1rem;
+  color: #ffffff;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+header .fixed .modal-menu ul li button:hover {
+  background: #f0f0f0;
+}
+
+/* ************************* */
 header .fixed ul li {
   position: relative;
   text-align: center;
   padding: 12px;
 
   /* margin-top: 10px; */
-  right: 240px;
+  /* right: 240px; */
 }
 header .fixed ul li a{
   color: #ffffffbd;
+  font-size: 20px;
   transition: 1s;
 
 
@@ -201,7 +257,8 @@ header .fixed ul li a{
 header .fixed ul li a:hover{
   color: rgb(255, 115, 0);
   transition: 0.5s;
-  font-size: 40px;
+  list-style:none ;
+  font-size: 30px;
   text-shadow: 0 0 10px #ff880050;
   
 }
@@ -225,15 +282,48 @@ header .fixed .image img.i1{
 /* START HERO SECTION */
 
 
+.modal-menu-menu {
+  display: block;
+  overflow: auto;
+  overflow-y: scroll;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1040;
+}
 
 
 
+.welcome-alert {
+  background: linear-gradient(30deg, rgba(115, 81, 1, 0.432) ,rgba(255, 255, 255, 0));
+  /* border: 1px solid #f3f3f333; */
+  padding: 1rem;
+  margin: 1rem;
+  text-align: center;
+  font-weight: bold;
+  box-shadow: 0 2px 10px #d0820449;
+  border-radius: 10px;
+  position: relative;
+  z-index: 1000;
+}
+
+.welcome-alert button {
+  background: #0a07005e;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  margin-top: 0.5rem;
+  border-radius: 15px;
+  cursor: pointer;
+}
 
 
 /* END HERO SECTION */
 
 
-@keyframes showModal{
+@keyframes showmodal-menu{
   0%{
     scale: 0;
 
@@ -316,8 +406,13 @@ main.main .left-section {
     margin-top: 200px ;
 }
 }
-
+header.flex nav {
+  display: flex;
+}
 @media (max-width: 700px){
+  /* header nav {
+    display: none;
+  } */
   header.flex nav{
     display: none;
   }
@@ -402,3 +497,11 @@ main.main .left-section {
   
 }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+  header .menu{
+    display: block;
+  }
+  header.flex nav{
+    display: none;
+  }
+}

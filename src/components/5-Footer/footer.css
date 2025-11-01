@@ -1,8 +1,9 @@
 footer.flex{
   justify-content: space-between;
   text-align: center;
+  flex-direction: column;
   background: linear-gradient(100deg,black, rgba(18, 0, 177, 0.342) ,rgb(0, 0, 0), rgb(0, 0, 0));
-  padding: 50px;
+  margin-top: 150px;
 
 }
 

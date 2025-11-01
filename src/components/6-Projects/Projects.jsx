@@ -15,7 +15,7 @@ export default function Projects() {
 
         {/* فيديو خلفية */}
         <video
-          src="https://res.cloudinary.com/dadtybpaw/video/upload/v1745424621/my_project/f9emljfdsh58094ke3gw.mp4"
+          src="https://res.cloudinary.com/dadtybpaw/video/upload/f_auto,q_auto/v1745424621/my_project/f9emljfdsh58094ke3gw.mp4"
           autoPlay
           loop
           muted

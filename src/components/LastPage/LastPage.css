@@ -14,10 +14,10 @@
     font-size: 35px;
     color: rgb(177, 106, 0);
 }
-.splash-screen span{
+/* .splash-screen span{
     font-size: 35px;
     color: rgb(82, 62, 33);
-}
+} */
 .splash-screen button.lastPage{
     margin-top: 50px;
     padding: 20px;

@@ -5,6 +5,8 @@ html{
   font-family: "Zain" ;
   box-sizing: border-box;
   letter-spacing: 1px;
+  text-decoration: none !important;
+  list-style: none !important;
   scroll-behavior: smooth;
 }
 *, *::before, *::after{
@@ -66,6 +68,7 @@ a{
   font-size: 30px;
   color: white;
   cursor: pointer;
+  z-index: 1000000;
 
   
 

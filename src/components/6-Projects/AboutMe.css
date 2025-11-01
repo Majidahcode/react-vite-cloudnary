@@ -1,16 +1,17 @@
 
 
 .about-video{
-  position: absolute;
-  width: 100%;
-  /* height: 200vh; */
+    position: relative;
+    width: 50%;
+    /* height: 200vh; */
+    text-align: center;
   background-attachment: fixed;
   /* opacity: 0.5; */
   top: 0px;
   left: 0px;
   bottom: 0px;
   right: 0px;
-  z-index: -1;
+  border-radius: 10px;
 /* background: red; */
 }
 
@@ -99,16 +100,16 @@
 .brand{
   /* background: red; */
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   margin-top: 50px;
 
-  /* width: 100%; */
+  width: 100%;
 }
 .brand img{
   /* background: red; */
   width: 300px;
-  margin-left: 20px;
+  margin-left: 0px;
   border-radius: 50px;
 }
 
@@ -251,6 +252,9 @@
   align-items: center;
   justify-content: space-between;
 
+}
+.first-cv .video-tashfeer-text{
+  width: 400px;
 }
 .cv-about{
   margin-top: 150px;
@@ -427,8 +431,12 @@
 .img-0 img {
   width: 200px;
 }
+.brand{
+  flex-direction: column;
+  /* width: 200%; */
+}
 .brand img {
-  width: 109px;
+  width: 290px;
  
 }
 
@@ -462,15 +470,21 @@
 }
 .final-header-3 img {
   width: 312px;
-  top: -1000px;
+  top: -1039px;
   position: relative;
 }
 .cv-about img {
   width: 175px;
+}
+.first-cv .video-tashfeer-text{
+  width: 200px;
 }
 .title h1 {
   font-size: 23px;
 
 
 }
+.about-video{
+width: 250px;
+        }
 }

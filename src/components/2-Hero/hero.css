@@ -1,27 +1,64 @@
 section.hero {
+  position: relative;
   padding-top: 100px;
+  display: flex;
+
   padding-left: 40px;
-  background: linear-gradient(30deg, rgba(2, 255, 171, 0.582),black, black);
-  justify-content: space-between;
-  transition: 1s;
+  overflow: hidden;
+    transition: 2s;
+
+
+  
 }
-section.hero:hover {
-  /* padding-top: 150px;
-  padding-left: 80px; */
-  background: linear-gradient(30deg, rgba(2, 255, 213, 0.582),black, rgba(0, 0, 0, 0.473));
-  justify-content: space-between;
+section.hero:hover{
+    border-radius: 50px;
+    transition: 2s;
+
+}
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  transition: opacity 1.5s ease;
+}
+
+
+.hero-overlay.base {
+  background: linear-gradient(30deg, #51e0ff, black, black);
+  opacity: 1;
+} 
+
+.hero-overlay.hover {
+  background: linear-gradient(30deg, rgba(2, 255, 213, 0.582), black, rgba(0, 0, 0, 0.473));
+  opacity: 0;
   border-radius: 50px;
-  transition: 1s;
 }
+
+section.hero:hover .hero-overlay.hover {
+  opacity: 1;
+  border-radius: 50px;
+
+}
+.left-section, .right-section {
+  position: relative;
+  z-index: 1;
+}
+/* 
+section.hero .left-section {
+  position: relative;
+  flex-grow: 1;
+
+  z-index: 1;
+} */
+
 section.hero .left-section{
   /* border: 1px solid yellow; */
-  flex-grow: 1;
   /* padding-left: 500px; */
 }
 .left-section  .cv{
   font-family: Sixtyfour;
 
-  color: rgb(128, 3, 3);
+  color: #530101;
   font-size: 80px;
   
   font-weight: bolder;
@@ -55,10 +92,12 @@ section.hero .goDown{
 
 }
 section.hero .left-section .disc{
-  font-size: 15px;
+  font-size: 25px;
   color: rgba(240, 248, 255, 0.705);
   padding: 15px;
   /* font-family: Marhey; */
+  font-weight: 100;
+
   margin-top: -15px;
 
   
@@ -152,35 +191,26 @@ section.hero .goDown{
   }
 }
 @media (max-width: 500px){
-  section.hero:hover {
-
-    background: linear-gradient(30deg, rgba(2, 255, 213, 0.582),black, rgba(0, 0, 0, 0.473));
-    justify-content: space-between;
-    border-radius: 50px;
-    transition: 1s;
-  }
   section.hero .left-section .title{
-    font-size: 25px;
-    margin-left: 15px;
-    line-height: 2;
-    width: 250px;
+           font-size: 35px;
+        margin-left: 15px;
+        line-height: 2;
+        width: 300px;
 
   
   }
   section.hero .left-section .disc{
-    font-size: 10px;
+    font-size: 21px;
     width: 300px;
-    margin-left: -15px;
   }
   section.hero .left-section p{
-    font-size: 9px;
+    font-size: 19px;
     width: 300px;
-    margin-left: -15px;
 
   }
 .left-section  .cv{
-  color: rgb(128, 3, 3);
-  font-size: 30px;
+  color: #530101;
+  font-size: 50px;
 
   
   font-weight: bolder;
@@ -197,6 +227,7 @@ section.hero .goDown{
     padding: 0 8px;
     font-size: 6px;
     border-radius: 15px;
+    display: none;
     
   }
   main.main .right-section .container-card:first-child {
@@ -208,3 +239,5 @@ section.hero .goDown{
   } */
 
 }
+
+

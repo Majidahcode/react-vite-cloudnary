@@ -131,13 +131,14 @@ border-radius: 50px;
     color: #b0b0ba;
     padding-top: 5px;
     margin-bottom: 20px;
+    font-size: 15px;
 }
 
 .desc h4{
     text-transform: uppercase;
 }
 input{
-    display: none;
+    display: block;
 }
 input:checked+label{
     width: 600px;

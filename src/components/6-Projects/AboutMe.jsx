@@ -10,10 +10,11 @@ export default function AboutMe() {
       <div className="">
         {/* <h1>  Comming Soon...  </h1>     */}
         <div className="container-about">
-        <video className="about-video" src="https://res.cloudinary.com/dadtybpaw/video/upload/v1745424652/my_project/ni22urjlovtg1cmrs39n.mp4" autoPlay loop></video>
+        <video className="about-video" src="https://res.cloudinary.com/dadtybpaw/video/upload/f_auto,q_auto/v1745424652/my_project/ni22urjlovtg1cmrs39n.mp4" autoPlay loop></video>
 
           <div className="main-header-about">
-            <div className="img-0"><img src="https://res.cloudinary.com/dadtybpaw/image/upload/v1745424692/my_project/loclroylyaxxyagqhxm6.png" alt="" /></div>
+            <div className="img-0"><img src="https://res.cloudinary.com/dadtybpaw/image/upload/f_auto,q_auto/v1745424692/my_project/loclroylyaxxyagqhxm6.png" alt=""   loading="lazy"
+ /></div>
             <div className="main-header-about-h1
         ">
               <h1>وصلت والله جابك اركب تأخرت علينا الرحله رح تعيش اليوم جو اتوقع كلنا نحبه رح تركب آله الزمن وتعيش دور هذاك الشخص الي يقدر يتخيل ايش رح يصير في المستقبل 😎</h1>
@@ -26,7 +27,8 @@ export default function AboutMe() {
         {/* <video className="about-video-1" src="/public/images-projects/space.mp4" autoPlay loop></video> */}
 
             <div className="first-0">
-              <div className="img-first-0"><img src="https://res.cloudinary.com/dadtybpaw/image/upload/v1745424693/my_project/jte61jdrgraa7s27hwfg.jpg" alt="" /></div>
+              <div className="img-first-0"><img src="https://res.cloudinary.com/dadtybpaw/image/upload/f_auto,q_auto/v1745424693/my_project/jte61jdrgraa7s27hwfg.jpg" alt=""   loading="lazy"
+/></div>
               <div className="h1-0">
                 <h1>ياحليلك والله انك مسكين ضارب هالمشوار كله عشان تشتري لك اغراضك </h1>
                 <h1>ترى رح نوصل لمرحله الواحد يتقضى مقاضيه كلها وهو على فراشه مريح </h1>
@@ -35,15 +37,19 @@ export default function AboutMe() {
               </div>
             </div>
             <div className="sec-0">
-              <div className="img-first-0"><img src="https://res.cloudinary.com/dadtybpaw/image/upload/v1745424702/my_project/y2ts4kavclf6nr0duzdl.jpg" alt="" /></div>
+              <div className="img-first-0"><img src="https://res.cloudinary.com/dadtybpaw/image/upload/f_auto,q_auto/v1745424702/my_project/y2ts4kavclf6nr0duzdl.jpg" alt=""   loading="lazy"
+ /></div>
               <div className="h1-0">
                 <h1> ي الهي اذهب ايها المعتوه إن هذا لضرب من الجنون</h1>
               </div>
             </div>
             <div className="brand">
-              <img src="https://res.cloudinary.com/dadtybpaw/image/upload/v1745424689/my_project/gnbm5gcpkactgrzc840j.png" alt="" />
-              <img src="https://res.cloudinary.com/dadtybpaw/image/upload/v1745424690/my_project/urlpwxb0ohbcehol1crh.png" alt="" />
-              <img src="https://res.cloudinary.com/dadtybpaw/image/upload/v1745424711/my_project/i6hgswmze0fbp7xy1xrr.png" alt="" />
+              <img className='img-brand-one' src="https://res.cloudinary.com/dadtybpaw/image/upload/f_auto,q_auto/v1745424689/my_project/gnbm5gcpkactgrzc840j.png" alt=""   loading="lazy"
+ />
+              <img className='img-brand-tow' src="https://res.cloudinary.com/dadtybpaw/image/upload/f_auto,q_auto/v1745424690/my_project/urlpwxb0ohbcehol1crh.png" alt=""   loading="lazy"
+ />
+              <img className='img-brand-three' src="https://res.cloudinary.com/dadtybpaw/image/upload/f_auto,q_auto/v1745424711/my_project/i6hgswmze0fbp7xy1xrr.png" alt=""   loading="lazy"
+ />
             </div>
           </div>
 
@@ -62,12 +68,14 @@ export default function AboutMe() {
                 </h1>
               </div>
               <div className="img-sec-1">
-                <img src="https://res.cloudinary.com/dadtybpaw/image/upload/v1745424706/my_project/ll0xznxlozzkaxdcniyn.jpg" alt="" />
+                <img src="https://res.cloudinary.com/dadtybpaw/image/upload/f_auto,q_auto/v1745424706/my_project/ll0xznxlozzkaxdcniyn.jpg" alt=""   loading="lazy"
+ />
               </div>
             </div>
 
             <div className="sec-1">
-              <img src="https://res.cloudinary.com/dadtybpaw/image/upload/v1745424704/my_project/tezfokscqtktiozcz2ap.jpg" alt="" />
+              <img src="https://res.cloudinary.com/dadtybpaw/image/upload/f_auto,q_auto/v1745424704/my_project/tezfokscqtktiozcz2ap.jpg" alt=""   loading="lazy"
+ />
               <h1>
                 اي والله انكم تحبون الشقى <br />تدري انو رح نوصل لوقت تكلم فيه صاحبك إلي في اقصى الارض
 
@@ -76,7 +84,8 @@ export default function AboutMe() {
                 لاااااا وبضغطه زر كمان تشوفه صوت وصوره 😏
               </h1>
               <div>
-                <img src="https://res.cloudinary.com/dadtybpaw/image/upload/v1745424705/my_project/jfelaxkbceimtgxcwios.jpg" alt="" />
+                <img src="https://res.cloudinary.com/dadtybpaw/image/upload/f_auto,q_auto/v1745424705/my_project/jfelaxkbceimtgxcwios.jpg" alt=""   loading="lazy"
+ />
                 <h1>
                   إنصرف من هنا فلست بناقص اناس مجانين يكفي  الحمام اللعين هذا
                 </h1>
@@ -88,7 +97,8 @@ export default function AboutMe() {
           <div className="sction-2">
             <div className="first-2">
               <div className="img-sec-1">
-                <img src="https://res.cloudinary.com/dadtybpaw/image/upload/v1745424706/my_project/majnnfruyhmbjw0itzik.jpg" alt="" />
+                <img src="https://res.cloudinary.com/dadtybpaw/image/upload/f_auto,q_auto/v1745424706/my_project/majnnfruyhmbjw0itzik.jpg" alt=""   loading="lazy"
+ />
               </div>
               <div className="h1-2">
                   <h1>وش قاعد تسوي ي الحبيب 🤨</h1>
@@ -101,7 +111,8 @@ export default function AboutMe() {
             </div>
             <div className="first-3">
               <div className="img-sec-1">
-                <img src="https://res.cloudinary.com/dadtybpaw/image/upload/v1745424709/my_project/d29dyn1p0uajckvs12s5.jpg" alt="" />
+                <img src="https://res.cloudinary.com/dadtybpaw/image/upload/f_auto,q_auto/v1745424709/my_project/d29dyn1p0uajckvs12s5.jpg" alt=""   loading="lazy"
+ />
               </div>
               <div className="h1-2">
                   <h1>ابغى اكون مميز محترف بس مدري كيف 😫</h1>
@@ -132,7 +143,8 @@ export default function AboutMe() {
                 <br />
                 <h1>😪 قول يارب قول يارب اني اعيش هاللحظه </h1>
               </div>
-              <img className="img-yellow" src="https://res.cloudinary.com/dadtybpaw/image/upload/v1745424710/my_project/hd6ozoxiruy3tlz0hk8t.jpg" alt="" />
+              <img className="img-yellow" src="https://res.cloudinary.com/dadtybpaw/image/upload/f_auto,q_auto/v1745424710/my_project/hd6ozoxiruy3tlz0hk8t.jpg" alt=""   loading="lazy"
+ />
 
             </div>
             <div className="first-4">
@@ -179,14 +191,18 @@ export default function AboutMe() {
                 <h1  className="dot">⚫</h1>
                 <h1  className="dot">⚫</h1>
               </div>
-              <img src="https://res.cloudinary.com/dadtybpaw/image/upload/v1745424694/my_project/qwd0eyrim4bss7wmpc4w.png" alt="" />
+              <img src="https://res.cloudinary.com/dadtybpaw/image/upload/f_auto,q_auto/v1745424694/my_project/qwd0eyrim4bss7wmpc4w.png" alt=""   loading="lazy"
+ />
 
             </div>
             <div className="cv-about">
-              <img src="https://res.cloudinary.com/dadtybpaw/image/upload/v1745424698/my_project/ldipefo8ulj92h4rh180.png" alt="" />
+              <img src="https://res.cloudinary.com/dadtybpaw/image/upload/f_auto,q_auto/v1745424698/my_project/ldipefo8ulj92h4rh180.png" alt=""   loading="lazy"
+ />
               <div className="first-cv">
-                <img src="https://res.cloudinary.com/dadtybpaw/image/upload/v1745424700/my_project/eftyav6uclgrdazbzeao.png" alt="" />
-                <img src="https://res.cloudinary.com/dadtybpaw/image/upload/v1745424696/my_project/qlrypt4prgjte3jit8t2.png" alt="" />
+                <img src="https://res.cloudinary.com/dadtybpaw/image/upload/f_auto,q_auto/v1745424700/my_project/eftyav6uclgrdazbzeao.png" alt=""   loading="lazy"
+ />
+                <video className='video-tashfeer-text'  loop autoPlay src="https://res.cloudinary.com/dadtybpaw/video/upload/v1748375537/video-tashfeer-text_g4wxdf.mp4" alt=""   loading="lazy"
+ />
 
               </div>
 
@@ -199,7 +215,8 @@ export default function AboutMe() {
                 <h1>رح تقرأه وانت مو حاسس بالوقت ؟؟؟؟؟؟؟؟؟</h1>
                 <h1>على فكره تراك تعرفت على تشفير بالكامل من غير ما تحس </h1>
                 <h1><span className="span-1">طيب وش السر <span className="imogy">🤨</span></span></h1>
-                <img src="https://res.cloudinary.com/dadtybpaw/image/upload/v1745424699/my_project/kuyntyvnswquqbvxcqcr.jpg" alt="" />
+                <img src="https://res.cloudinary.com/dadtybpaw/image/upload/f_auto,q_auto/v1745424699/my_project/kuyntyvnswquqbvxcqcr.jpg" alt=""   loading="lazy"
+ />
                 <h1>اتوقع انك عرفت ايش السر ي فهيم😉</h1>
                 <h1 className="black"><span className="span-2">صور</span> فيدوهات <span className="span-3">خطوط الكلام مريحه للعين</span> .. <span className="span-4">امثله</span> .. <span className="span-5">الوان</span> كلام بسيط</h1>
                 <h1>ضحك هناك 🤣 جديه هنا <span className="imogy">🕵️‍♀️</span> وكل هذا يخليك مستمتع </h1>
@@ -207,12 +224,12 @@ export default function AboutMe() {
                 <h1>أرررحب تراحيب المطر ي هلا واالله <span className="imogy">🫡</span></h1>
                 <h1 className="black">انا  .. <span className="imogy">😀</span><span className="span-0">تشفير</span> شخصيا تبغى تكون مميز مثلي </h1>
                 <h1>أبشر غالي والطلب رخيص</h1>
-                <h1 className="black">من سبق لبق  📲 </h1>
+                {/* <h1 className="black">من سبق لبق  📲 </h1>
                 <h1>دقيقه🚫🚫🚫🚫🚫 دقيقه ⛔⛔⛔⛔⛔</h1>
                 <h1
-                            onClick={() => handleCardClick('https://majidahcode.github.io/Personal-Website-with-Dark-Light-Mode/')}
+                            // onClick={() => handleCardClick('https://majidahcode.github.io/Personal-Website-with-Dark-Light-Mode/')}
  
-                >وش رايك تضغطني ووديك على مكان متأكد مليون بالميه رح تفهم ايش معنى هذا الشغل الي عليه الكلام مش شغل مشي الحال</h1>
+                >وش رايك تضغطني ووديك على مكان متأكد مليون بالميه رح تفهم ايش معنى هذا الشغل الي عليه الكلام مش شغل مشي الحال</h1> */}
               </div>
             </div>
           </div>

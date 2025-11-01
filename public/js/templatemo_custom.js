@@ -1,157 +1,235 @@
-"use strict";
+import React, { useState, useEffect } from "react";
 
-jQuery(document).ready(function($){
+const images = [
+  {
+    id: 1,
+    bgUrl: "public/images/gp3.jpg",
+    // يمكنك إضافة روابط أخرى حسب الحاجة
+  },
+  {
+    id: 2,
+    bgUrl: "https://res.cloudinary.com/dadtybpaw/image/upload/v1745424484/my_project/qq3raqcen0myc1tdcs05.jpg",
+  },
+  {
+    id: 3,
+    bgUrl: "https://res.cloudinary.com/dadtybpaw/image/upload/v1745424483/my_project/k41jc2esxkveobkxk7vn.jpg",
+  },
+  {
+    id: 4,
+    bgUrl: "https://res.cloudinary.com/dadtybpaw/image/upload/v1745424473/my_project/luxz4as1cwfgeuummxx9.jpg",
+  },
+  {
+    id: 5,
+    bgUrl: "https://res.cloudinary.com/dadtybpaw/image/upload/v1745424474/my_project/yikfirbx7tf653fq17gf.jpg",
+  },
+  {
+    id: 6,
+    bgUrl: "https://res.cloudinary.com/dadtybpaw/image/upload/v1745424472/my_project/pxrlmsdr7gjw5gzp7job.jpg",
+  },
+  {
+    id: 7,
+    bgUrl: "https://res.cloudinary.com/dadtybpaw/image/upload/v1745424480/my_project/rqjxxxbx0njgsnuhkqcb.jpg",
+  },
+];
 
-  /*-------------------------------------------------------------------------
-   * 1. Plugins Init
-  -------------------------------------------------------------------------*/
+const TempletReact = () => {
+  // حالة لإدارة الخلفية الحالية
+  const [bgImage, setBgImage] = useState(images[0].bgUrl);
 
-  // ToolTip
-  function toolTipInit() {
-    $('.menu li a').tooltip({
-      placement: 'right'
-    });
-  }
-  toolTipInit();
+  // حالة لإدارة عرض القائمة (responsive_menu)
+  const [menuVisible, setMenuVisible] = useState(false);
 
-  // MixItUp Plugin
-  $('#Grid').mixitup({
-    effects: ['fade','grayscale'],
-    easing: 'snap',
-    transitionSpeed: 800
-  });
+  // حالة لإدارة الصفحات المفتوحة (menu-1, menu-2, ... )
+  const [activeMenu, setActiveMenu] = useState("homepage");
 
-  // Nice Scroll Plugin
-  $("html").niceScroll({
-    cursorcolor : '#a71e2b',
-    cursorborder : 0,
-    zindex : 99999,
-  });
+  // دالة تحاكي loadScript() - يمكنك تعديلها حسب الحاجة
+  const loadScript = () => {
+    console.log("Script loaded");
+  };
 
-  // LightBox
-  $(function(){
-    $('[data-rel="lightbox"]').lightbox();
-  });
+  // تغيير الخلفية مع تأثير fade
+  const changeBackground = (url, needLoadScript = false) => {
+    if (needLoadScript) loadScript();
 
+    // لإنشاء تأثير fade بسيط بدون jQuery يمكن استخدام CSS لكن هنا سنستخدم مؤقت صغير
+    setBgImage(""); // اجعل الخلفية فارغة لفترة قصيرة
 
-  /*-------------------------------------------------------------------------
-   * 2. Site Specific Functions
-  -------------------------------------------------------------------------*/
+    setTimeout(() => {
+      setBgImage(url);
+    }, 300); // مدة الفاصل الزمني (تأثير الـ fade تقريبي)
+  };
 
-  // Responsive Navigation: منع السلوك الافتراضي لمنع إعادة تحميل الصفحة
-  $('.menu-toggle-btn').click(function(e){
+  // التعامل مع الضغط على أزرار القائمة الرئيسية
+  const handleMenuClick = (e, menuClass) => {
     e.preventDefault();
-    $('.responsive_menu').stop(true, true).slideToggle();
-  });
 
-  $(".responsive_menu a").click(function(){
-    $('.responsive_menu').hide();
-  });
+    // اختيار الصفحة حسب الرقم في الـ class (مثل show-3)
+    if (menuClass.startsWith("show-")) {
+      const n = menuClass.split("-")[1];
+      setActiveMenu("menu-" + n);
+    }
 
-  // Open Filters on gallery page
-  $(".toggle-filter").click(function(){
-    $(".filter-controls").slideToggle();
-    return false;
-  });
+    // إظهار الصفحة الرئيسية إذا زر homebutton
+    if (menuClass === "homebutton") {
+      setActiveMenu("homepage");
+    }
+  };
 
-  // Open Different Pages
-  $(".main_menu a").click(function(){
-    var id = $(this).attr('class');
-    id = id.split('-');
-    $("#menu-container .content").hide();
-    $("#menu-container #menu-" + id[1]).slideDown(600);
-    $("#menu-container .homepage").hide();
-    return false;
-  });
+  return (
+    <>
+      {/* الخلفية مع تأثير */}
+      <div
+        className="bg-image"
+        style={{
+          backgroundImage: `url(${bgImage})`,
+          transition: "background-image 0.5s ease-in-out",
+          height: "100vh",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      ></div>
 
-  $(".main_menu a.homebutton").click(function(){
-    $("#menu-container .homepage").show();
-    return false;
-  });
+      {/* زر القائمة للنسخة المتجاوبة */}
+      <button
+        className="menu-toggle-btn"
+        onClick={() => setMenuVisible(!menuVisible)}
+      >
+        القائمة
+      </button>
 
-  $(".main_menu .show-1").click(function(){
-    $(".bg-image").fadeOut('slow', function(){
-      $(this).css({
-        'background-image': 'url(public/images/gp3.jpg)'
-      }).fadeIn('slow');
-    });
-    return false;
-  });
+      {/* القائمة المتجاوبة */}
+      {menuVisible && (
+        <div className="responsive_menu">
+          <a href="#" onClick={() => setMenuVisible(false)}>
+            رابط 1
+          </a>
+          <a href="#" onClick={() => setMenuVisible(false)}>
+            رابط 2
+          </a>
+          {/* أضف روابط أخرى حسب الحاجة */}
+        </div>
+      )}
 
-  $(".main_menu .show-2").click(function(){
-    $(".bg-image").fadeOut('slow', function(){
-      $(this).css({
-        'background-image': 'url(https://res.cloudinary.com/dadtybpaw/image/upload/v1745424484/my_project/qq3raqcen0myc1tdcs05.jpg)'
-      }).fadeIn('slow');
-    });
-    return false;
-  });
+      {/* القائمة الرئيسية */}
+      <nav className="main_menu">
+        {/* على سبيل المثال */}
+        {["show-1", "show-2", "show-3", "show-4", "show-5", "show-6", "show-7"].map(
+          (cls) => (
+            <a
+              href="#"
+              key={cls}
+              className={cls}
+              onClick={(e) => {
+                e.preventDefault();
 
-  $(".main_menu .show-3").click(function(){
-    $(".bg-image").fadeOut('slow', function(){
-      $(this).css({
-        'background-image': 'url(https://res.cloudinary.com/dadtybpaw/image/upload/v1745424483/my_project/k41jc2esxkveobkxk7vn.jpg)'
-      }).fadeIn('slow');
-    });
-    return false;
-  });
+                // تغيير الخلفية حسب الزر
+                const imgObj = images.find(
+                  (img, idx) => idx === parseInt(cls.split("-")[1]) - 1
+                );
+                if (imgObj) {
+                  const needLoad = ["show-5", "show-6", "show-7"].includes(cls);
+                  changeBackground(imgObj.bgUrl, needLoad);
+                }
 
-  $(".main_menu .show-4").click(function(){
-    $(".bg-image").fadeOut('slow', function(){
-      $(this).css({
-        'background-image': 'url(https://res.cloudinary.com/dadtybpaw/image/upload/v1745424473/my_project/luxz4as1cwfgeuummxx9.jpg)'
-      }).fadeIn('slow');
-    });
-    return false;
-  });
+                // تحديث الصفحة المعروضة
+                setActiveMenu("menu-" + cls.split("-")[1]);
+              }}
+            >
+              {cls}
+            </a>
+          )
+        )}
 
-  $(".main_menu .show-5").click(function(){
-    loadScript();
-    $(".bg-image").fadeOut('slow', function(){
-      $(this).css({
-        'background-image': 'url(https://res.cloudinary.com/dadtybpaw/image/upload/v1745424474/my_project/yikfirbx7tf653fq17gf.jpg)'
-      }).fadeIn('slow');
-    });
-    return false;
-  });
+        {/* زر العودة للرئيسية */}
+        <a
+          href="#"
+          className="homebutton"
+          onClick={(e) => {
+            e.preventDefault();
+            setActiveMenu("homepage");
+            changeBackground(images[0].bgUrl);
+          }}
+        >
+          الرئيسية
+        </a>
+      </nav>
 
-  $(".main_menu .show-6").click(function(){
-    loadScript();
-    $(".bg-image").fadeOut('slow', function(){
-      $(this).css({
-        'background-image': 'url(https://res.cloudinary.com/dadtybpaw/image/upload/v1745424472/my_project/pxrlmsdr7gjw5gzp7job.jpg)'
-      }).fadeIn('slow');
-    });
-    return false;
-  });
+      {/* محتوى الصفحات */}
+      <div id="menu-container">
+        {activeMenu === "homepage" && (
+          <div className="homepage content">محتوى الصفحة الرئيسية</div>
+        )}
+        {activeMenu === "menu-1" && (
+          <div className="content">محتوى الصفحة 1</div>
+        )}
+        {activeMenu === "menu-2" && (
+          <div className="content">محتوى الصفحة 2</div>
+        )}
+        {activeMenu === "menu-3" && (
+          <div className="content">محتوى الصفحة 3</div>
+        )}
+        {activeMenu === "menu-4" && (
+          <div className="content">محتوى الصفحة 4</div>
+        )}
+        {activeMenu === "menu-5" && (
+          <div className="content">محتوى الصفحة 5</div>
+        )}
+        {activeMenu === "menu-6" && (
+          <div className="content">محتوى الصفحة 6</div>
+        )}
+        {activeMenu === "menu-7" && (
+          <div className="content">محتوى الصفحة 7</div>
+        )}
+      </div>
 
-  $(".main_menu .show-7").click(function(){
-    loadScript();
-    $(".bg-image").fadeOut('slow', function(){
-      $(this).css({
-        'background-image': 'url(https://res.cloudinary.com/dadtybpaw/image/upload/v1745424480/my_project/rqjxxxbx0njgsnuhkqcb.jpg)'
-      }).fadeIn('slow');
-    });
-    return false;
-  });
+      {/* مثال لتأثير hover على services (يمكنك إضافة CSS) */}
+      <Services />
+    </>
+  );
+};
 
-  // Services Offer Effect
-  $('.services .header .service-header').hover(function () {
-    var t = $(this);
-    t.find('h4').hide();
-    $(this).parent().find('.header-bg').stop(true, true).animate({
-      width: '100%'
-    }, 'fast', function () {
-      t.find('h4').addClass('active').fadeIn('fast');
-    });
-  }, function () {
-    var t = $(this);
-    t.find('h4').hide();
-    t.parent().find('.header-bg').stop(true, true).animate({
-      width: 60
-    }, 'fast', function () {
-      t.find('h4').removeClass('active').fadeIn('fast');
-    });
-  });
+// مكون مثال لتأثير الـ hover على خدمات الخدمات
+const Services = () => {
+  const [activeIndex, setActiveIndex] = useState(null);
 
-});
+  return (
+    <div className="services">
+      {[1, 2, 3].map((i) => (
+        <div
+          key={i}
+          className="service"
+          onMouseEnter={() => setActiveIndex(i)}
+          onMouseLeave={() => setActiveIndex(null)}
+          style={{
+            border: "1px solid #ccc",
+            padding: "10px",
+            margin: "10px",
+            width: activeIndex === i ? "300px" : "60px",
+            transition: "width 0.3s ease",
+            overflow: "hidden",
+            cursor: "pointer",
+          }}
+        >
+          <h4
+            style={{
+              display: activeIndex === i ? "block" : "none",
+              color: activeIndex === i ? "red" : "black",
+            }}
+          >
+            خدمة {i}
+          </h4>
+          <div
+            className="header-bg"
+            style={{
+              backgroundColor: "#eee",
+              width: activeIndex === i ? "100%" : "60px",
+              height: "50px",
+            }}
+          />
+        </div>
+      ))}
+    </div>
+  );
+};
+
+export default TempletReact;

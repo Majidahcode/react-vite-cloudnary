@@ -24,10 +24,11 @@ const Hello1 = () => {
 
 const SplashScreen = ({ onClose }) => {
   return (
-    <div className="splash-screen">
+     <div className="container-hello-page">
+    <div className="splash-screen warning-box">
       {/* <h1>مرحباً بك!</h1>
       <p>هذه صفحة البداية.</p> */}
-       <p>
+       {/* <p>
         طيب ليه  محد قالي هالكلام من زمان <span className="tow2">عشانك</span> كنت في جامعه ي اخي وي اختي جامعه مدرسه ما تعلمتك الاشياء الي لازم تتعلمها عشان تعيش ب هالدنيا العيشه الصح الدراسه في وادي والحياه ومطباتها في وادي ثاااني خالص يمكن في المريخ  🙃
        </p>
        <p>
@@ -35,10 +36,19 @@ const SplashScreen = ({ onClose }) => {
        </p>
        <p>
         اوووووباااااااااااااا وصلت والله جابك بس اضغط هذا الزر ي مميز 
-       </p>
-      <button className="close-button" onClick={onClose}>
+       </p> */}
+        <video className="about-video" src="https://res.cloudinary.com/dadtybpaw/video/upload/v1759319400/video-hello-page2_qgw7z8.mp4"
+autoPlay
+  // muted
+  playsInline
+  controls
+  preload="auto"
+  crossOrigin="anonymous"         ></video>
+
+      <button className="close-button hello" onClick={onClose}>
         ❌
       </button>
+    </div>
     </div>
   );
 };

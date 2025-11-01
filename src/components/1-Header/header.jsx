@@ -1,10 +1,39 @@
-import React, { useState } from "react";
+import React, { useState ,useEffect } from "react";
 import { Link } from "react-router-dom";
 
 import "./header.css";
 
 const Header = () => {
   const [activeModal, setActiveModal] = useState(null); // حالة لتحديد المحتوى النشط
+  // const [showWelcomeMsg, setShowWelcomeMsg] = useState(false);
+  const [showWelcomeMsg, setShowWelcomeMsg] = useState(false);
+    const [isClosing, setIsClosing] = useState(false);
+
+
+
+// عرض رسالة لمرة واحدة وتحديد الوقت قبل أن تختفي تلقائيًا
+  useEffect(() => {
+    const alreadyShown = localStorage.getItem("welcome_shown");
+    if (!alreadyShown) {
+      setShowWelcomeMsg(true);
+      localStorage.setItem("welcome_shown", "true");
+    }
+  }, []);
+  // عند إظهار الرسالة، إخفاؤها تلقائيًا بعد 3 ثوانٍ
+  useEffect(() => {
+    let timer;
+    if (showWelcomeMsg) {
+      timer = setTimeout(() => {
+        setIsClosing(true);
+        setTimeout(() => {
+          setShowWelcomeMsg(false);
+          setIsClosing(false);
+        }, 500); // نفس مدة التحول في CSS
+      }, 3000);
+    }
+    return () => clearTimeout(timer);
+  }, [showWelcomeMsg]);
+
 
   const handleOpenModal = (modalId) => {
     setActiveModal(modalId); // تعيين الـ modal الذي تم النقر عليه
@@ -15,9 +44,15 @@ const Header = () => {
   };
 
   return (
-    <header className="flex">
+    <>
+  {showWelcomeMsg && (
+      <div className="welcome-alert">
+        <p> اضغط على شعار "تشفير" في الأعلى للعودة إلى الصفحة الرئيسية.</p>
+        <button onClick={() => setShowWelcomeMsg(false)}>فهمت </button>
+      </div>
+    )}    <header className="flex">
       <h1>
-        <Link to="/Home">تشف'?'ير</Link>
+        <Link to="/Home">تشفير</Link>
       </h1>
       <button
         onClick={() => handleOpenModal("menu")}
@@ -51,12 +86,22 @@ const Header = () => {
           <button onClick={handleCloseModal} className="closeBtn">
             ✖
           </button>
-          <ul className="modal">
-            <li><a href="">About</a></li>
-            <li><a href="">Articles</a></li>
-            <li><a href="">Projects</a></li>
-            <li><a href="">Speaking</a></li>
-            <li><a href="">Uses</a></li>
+          <ul className="modal-menu">
+          <li>
+            <Link to="/AboutMePage">مين تشفير؟</Link>
+          </li>
+          <li>
+            <Link to="/AskAboutProg">  من لا شيء الى شيء</Link>
+          </li>
+          <li>
+            <Link to="/NextPage">المشاريع الخاصه</Link>
+          </li>
+          <li>
+            <Link to="/Sourses">   تلعب معنا لعبه؟</Link>
+          </li>
+          <li>
+            <Link to="/Content">للتواصل</Link>
+          </li>
           </ul>
         </div>
       )}
@@ -66,7 +111,7 @@ const Header = () => {
           <button onClick={handleCloseModal} className="closeBtnModalTo">
             ✖
           </button>
-          <ul className="modalTo">
+          {/* <ul className="modalTo">
                      
             
             8/5/1443 الثلاثاء حياه المبرمج مثل حياه اي شخص ولو كان جدااا عادي
@@ -108,7 +153,7 @@ const Header = () => {
             من القرارات الي تساعدني على التركيز في البرمجه والي يقرأ هالكلام
             يفكر اني ملتزمه في القرارات هذي 👌
             
-          </ul> 
+          </ul>  */}
         </div>
       )}
 
@@ -117,7 +162,7 @@ const Header = () => {
           <button onClick={handleCloseModal} className="closeBtnModalTo">
             ✖
           </button>
-          <ul className="modalTo">
+          {/* <ul className="modalTo">
           
           
           لا 😪انا بشر عاديه مثلي مثل أي شخص ثاني كل المبرمجين يمروا بهذي
@@ -161,14 +206,14 @@ const Header = () => {
           وش قاعده اقول مو مثل 👈🖥️💻😑 يلا مع السلامه
           
         </ul>
-
+ */}
          
         </div>
       )}
 
       {/* Buttons */}
     
-      <button onClick={() => handleOpenModal("modal2")} className="represntBtn">
+      {/* <button onClick={() => handleOpenModal("modal2")} className="represntBtn">
         2
       </button>
       <button onClick={() => handleOpenModal("modal1")} className="represntBtn">
@@ -176,9 +221,11 @@ const Header = () => {
       </button>
       <button className="represntBtn">
         👈بعض الحاجات الي لازم تعرفها
-      </button>
+      </button> */}
     </header>
+    </>
   );
+  
 };
 
 export default Header;
